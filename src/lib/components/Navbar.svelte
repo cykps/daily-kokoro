@@ -14,6 +14,7 @@
 	import { novelList } from '$lib/novels/dict';
 	import { id2Path } from '$lib/novels/util';
 	import { serviceName } from '$lib/components/scripts/consts';
+  import { base } from '$app/paths';
 
 	let isOpen = false;
 
@@ -24,7 +25,7 @@
 
 <div class="navbar-outer">
 	<Navbar light expand="md" container="sm" class="py-3">
-		<NavbarBrand class="fw-bold" href="/">{serviceName}</NavbarBrand>
+		<NavbarBrand class="fw-bold" href={base}>{serviceName}</NavbarBrand>
 		<NavbarToggler onclick={() => (isOpen = !isOpen)} />
 		<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
 			<Nav class="ms-auto" navbar>

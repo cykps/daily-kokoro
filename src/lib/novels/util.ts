@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 export function id2Path(novelId: string) {
-	return `/novels/${novelId}`;
+	return `${base}/novels/${novelId}`;
 }

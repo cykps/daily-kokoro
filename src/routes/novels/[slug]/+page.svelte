@@ -123,6 +123,7 @@
 			<PaginationItem>
 				<PaginationLink
 					previous
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v - 1);
 					}}
@@ -130,6 +131,7 @@
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v - 5);
 					}}>{$episodeIdx - 4}</PaginationLink
@@ -137,6 +139,7 @@
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v - 2);
 					}}>{$episodeIdx - 1}</PaginationLink
@@ -144,23 +147,26 @@
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v - 1);
 					}}>{$episodeIdx}</PaginationLink
 				>
 			</PaginationItem>
 			<PaginationItem active>
-				<PaginationLink>{$episodeIdx + 1}</PaginationLink>
+				<PaginationLink href="#">{$episodeIdx + 1}</PaginationLink>
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
 					onclick={() => {
+					href="#"
 						episodeIdx.update((v) => v + 1);
 					}}>{$episodeIdx + 2}</PaginationLink
 				>
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v + 2);
 					}}>{$episodeIdx + 3}</PaginationLink
@@ -168,6 +174,7 @@
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v + 4);
 					}}>{$episodeIdx + 6}</PaginationLink
@@ -176,6 +183,7 @@
 			<PaginationItem>
 				<PaginationLink
 					next
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v + 1);
 					}}
@@ -184,6 +192,7 @@
 			<PaginationItem>
 				<PaginationLink
 					last
+					href="#"
 					onclick={() => {
 						episodeIdx.update((v) => v + 10);
 					}}

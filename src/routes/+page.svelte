@@ -4,6 +4,7 @@
 	import { Button } from '@sveltestrap/sveltestrap';
 	import { serviceName } from '$lib/components/scripts/consts';
 	import NovelList from '$lib/components/NovelList.svelte';
+  import { base } from '$app/paths';
 
 	// 1914年からの経過年数を算出
 	function calcElapsedYears() {
@@ -29,7 +30,7 @@
 		<p class="my-1">110日かけて新聞連載のように『こゝろ』を読むことが出来ます。</p>
 	</div>
 	<div class="my-3">
-		<a href="/novels/kokoro">
+		<a href="{base}/novels/kokoro">
 			<Button color="primary" outline>『こゝろ』の一話目を読む</Button>
 		</a>
 	</div>

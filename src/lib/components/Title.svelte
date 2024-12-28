@@ -13,7 +13,5 @@
 </script>
 
 <svelte:head>
-	<title>
-		{isRoot ? serviceName : `${text}｜${serviceName}`}
-	</title>
+	<title>{text}｜{serviceName}</title>
 </svelte:head>

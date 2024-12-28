@@ -1,0 +1,276 @@
+:global(div, h1, h2) {
+	line-height: 160%;
+}
+:global(ruby) {
+	line-height: 100%;
+}
+:global(rt) {
+	line-height: 50%;
+}
+:global(span.notes) {
+	font-size: smaller;
+}
+
+:global(img.gaiji) {
+	width: 1em;
+	height: 1em;
+	align: top;
+}
+:global(.gaiji_list) {
+	margin-left: 3em;
+}
+
+:global(.keigakomi) {
+	border: solid 1px;
+}
+:global(div.keigakomi) {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+	padding-left: 1em;
+}
+
+:global(.futoji) {
+	font-weight: bold;
+}
+:global(.shatai) {
+	font-style: italic;
+}
+
+:global(.underline_solid) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/sen/bosen.png') repeat-x;
+}
+
+:global(.underline_double) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/sen/nijyubosen.png') repeat-x;
+}
+
+:global(.underline_dotted) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/sen/sasen.png') repeat-x;
+}
+
+:global(.underline_dashed) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/sen/hasen.png') repeat-x;
+}
+
+:global(.underline_wave) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/sen/namisen.png') repeat-x;
+}
+
+:global(.overline_solid) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/sen/bosen.png') repeat-x;
+}
+
+:global(.overline_double) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/sen/nijyubosen.png') repeat-x;
+}
+
+:global(.overline_dotted) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/sen/sasen.png') repeat-x;
+}
+
+:global(.overline_dashed) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/sen/hasen.png') repeat-x;
+}
+
+:global(.overline_wave) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/sen/namisen.png') repeat-x;
+}
+
+:global(.sesame_dot) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/boten.png') repeat-x;
+}
+
+:global(.white_sesame_dot) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/shirogoma.png') repeat-x;
+}
+
+:global(.black_circle) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/maru.png') repeat-x;
+}
+
+:global(.white_circle) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/shiromaru.png') repeat-x;
+}
+
+:global(.black_up-pointing_triangle) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/kurosankaku.png') repeat-x;
+}
+
+:global(.white_up-pointing_triangle) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/shirosankaku.png') repeat-x;
+}
+
+:global(.bullseye) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/nijyumaru.png') repeat-x;
+}
+
+:global(.fisheye) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/jyanome.png') repeat-x;
+}
+
+:global(.saltire) {
+	font-style: normal;
+	padding: 7px 0 0;
+	background: url('css/kentenbosen/before/ten/batsu.png') repeat-x;
+}
+
+:global(.sesame_dot_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/boten.png') repeat-x;
+}
+
+:global(.white_sesame_dot_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/shirogoma.png') repeat-x;
+}
+
+:global(.black_circle_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/maru.png') repeat-x;
+}
+
+:global(.white_circle_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/shiromaru.png') repeat-x;
+}
+
+:global(.black_up-pointing_triangle_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/kurosankaku.png') repeat-x;
+}
+
+:global(.white_up-pointing_triangle_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/shirosankaku.png') repeat-x;
+}
+
+:global(.bullseye_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/nijyumaru.png') repeat-x;
+}
+
+:global(.fisheye_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/jyanome.png') repeat-x;
+}
+
+:global(.saltire_after) {
+	font-style: normal;
+	padding: 0 0 7px 0;
+	background: url('css/kentenbosen/after/ten/batsu.png') repeat-x;
+}
+
+:global(.subscript) {
+	font-size: small;
+}
+:global(.superscript) {
+	font-size: small;
+}
+:global(.kaeriten) {
+	font-size: small;
+}
+:global(.okurigana) {
+	font-size: small;
+}
+
+/* inline objects */
+:global(.dogyo-o-midashi) {
+	display: inline;
+}
+:global(.dogyo-naka-midashi) {
+	display: inline;
+}
+:global(.dogyo-ko-midashi) {
+	display: inline;
+}
+:global(.mado-o-midashi) {
+	display: inline;
+}
+:global(.mado-naka-midashi) {
+	display: inline;
+}
+:global(.mado-ko-midashi) {
+	display: inline;
+}
+
+/* headings */
+
+:global(h3) {
+	font-size: 125%;
+	margin: 0%;
+}
+:global(h4) {
+	font-size: large;
+	margin: 0%;
+}
+:global(h5) {
+	font-size: medium;
+	margin: 0%;
+}
+
+:global(.caption) {
+	font-size: small;
+	font-weight: bold;
+}
+
+:global(.complex_ruby rt.real_ruby:before) {
+	content: '�i';
+}
+:global(.complex_ruby rt.real_ruby:after) {
+	content: '�j';
+}
+
+/* dynamic contents using javascript */
+:global(.contents_invisible) {
+	display: none;
+}
+:global(.contents_visible) {
+	display: block;
+	margin-left: 3em;
+	text-indent: -1em;
+}

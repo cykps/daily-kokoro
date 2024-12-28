@@ -25,7 +25,7 @@
 
 <div class="navbar-outer">
 	<Navbar light expand="md" container="sm" class="py-3">
-		<NavbarBrand class="fw-bold" href="{base === '' ? base : '/'}">{serviceName}</NavbarBrand>
+		<NavbarBrand class="fw-bold" href="{base ? base : '/'}">{serviceName}</NavbarBrand>
 		<NavbarToggler onclick={() => (isOpen = !isOpen)} />
 		<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
 			<Nav class="ms-auto" navbar>

@@ -158,8 +158,8 @@
 			</PaginationItem>
 			<PaginationItem>
 				<PaginationLink
-					onclick={() => {
 					href="#"
+					onclick={() => {
 						episodeIdx.update((v) => v + 1);
 					}}>{$episodeIdx + 2}</PaginationLink
 				>

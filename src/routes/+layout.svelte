@@ -5,9 +5,15 @@
 	import { Container } from '@sveltestrap/sveltestrap';
 	let { children } = $props();
 	import { Styles } from '@sveltestrap/sveltestrap';
+  import { pwaInfo } from 'virtual:pwa-info'; 
+
+  let webManifestLink = pwaInfo ? pwaInfo.webManifest.linkTag : '';
 </script>
 
 <Styles />
+<svelte:head>
+  {@html webManifestLink}
+</svelte:head>
 
 <div class="app">
 	<Navbar />

@@ -111,6 +111,7 @@
 	<!-- Pagination -->
 	<div class="pagination-outer text-center">
 		<Pagination ariaLabel="Page navigation" size="sm">
+      {#if 0 <= $episodeIdx - 10}
 			<PaginationItem>
 				<PaginationLink
 					first
@@ -120,6 +121,8 @@
 					}}
 				/>
 			</PaginationItem>
+      {/if}
+      {#if 0 <= $episodeIdx - 1}
 			<PaginationItem>
 				<PaginationLink
 					previous
@@ -129,6 +132,8 @@
 					}}
 				/>
 			</PaginationItem>
+      {/if}
+      {#if 0 <= $episodeIdx - 5}
 			<PaginationItem>
 				<PaginationLink
 					href="#"
@@ -137,6 +142,8 @@
 					}}>{$episodeIdx - 4}</PaginationLink
 				>
 			</PaginationItem>
+      {/if}
+      {#if 0 <= $episodeIdx - 2}
 			<PaginationItem>
 				<PaginationLink
 					href="#"
@@ -145,6 +152,8 @@
 					}}>{$episodeIdx - 1}</PaginationLink
 				>
 			</PaginationItem>
+      {/if}
+      {#if 0 <= $episodeIdx - 1}
 			<PaginationItem>
 				<PaginationLink
 					href="#"
@@ -153,9 +162,11 @@
 					}}>{$episodeIdx}</PaginationLink
 				>
 			</PaginationItem>
+      {/if}
 			<PaginationItem active>
 				<PaginationLink href="#">{$episodeIdx + 1}</PaginationLink>
 			</PaginationItem>
+      {#if $episodeIdx + 1 < episodeCount}
 			<PaginationItem>
 				<PaginationLink
 					href="#"
@@ -164,6 +175,8 @@
 					}}>{$episodeIdx + 2}</PaginationLink
 				>
 			</PaginationItem>
+      {/if}
+      {#if $episodeIdx + 2 < episodeCount}
 			<PaginationItem>
 				<PaginationLink
 					href="#"
@@ -172,14 +185,18 @@
 					}}>{$episodeIdx + 3}</PaginationLink
 				>
 			</PaginationItem>
+{/if}
+      {#if $episodeIdx + 5 < episodeCount}
 			<PaginationItem>
 				<PaginationLink
 					href="#"
 					onclick={() => {
-						episodeIdx.update((v) => v + 4);
+						episodeIdx.update((v) => v + 5);
 					}}>{$episodeIdx + 6}</PaginationLink
 				>
 			</PaginationItem>
+{/if}
+      {#if $episodeIdx + 1 < episodeCount}
 			<PaginationItem>
 				<PaginationLink
 					next
@@ -189,6 +206,8 @@
 					}}
 				/>
 			</PaginationItem>
+{/if}
+      {#if $episodeIdx + 10 < episodeCount}
 			<PaginationItem>
 				<PaginationLink
 					last
@@ -198,6 +217,7 @@
 					}}
 				/>
 			</PaginationItem>
+{/if}
 		</Pagination>
 	</div>
 </main>
